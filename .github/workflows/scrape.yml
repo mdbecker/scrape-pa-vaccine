@@ -31,7 +31,7 @@ jobs:
         -H 'dnt: 1' \
         -H 'sec-gpc: 1' \
         --compressed > page.html
-  - name: Commit and push if it changed
+    - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
